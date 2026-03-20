@@ -1,0 +1,42 @@
+/**
+ * Design tokens — mirrored from Surveil Design System
+ */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-primary: #3165ad;
+  --color-primary-700: #203b61;
+  --color-primary-900: #111827;
+  --color-grey: #616161;
+  --color-grey-50: #efefef;
+  --color-grey-100: #dfdfdf;
+  --color-grey-500: #616161;
+  --color-grey-600: #3a3a3a;
+  --color-success: #15803d;
+  --color-error: #e61c1d;
+
+  /* Typography */
+  --font-family-body: Roboto, system-ui, -apple-system, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Scale */
+  --scale-100: 4px;
+  --scale-200: 8px;
+  --scale-300: 12px;
+  --scale-400: 16px;
+  --scale-500: 20px;
+  --scale-600: 24px;
+
+  /* Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+}

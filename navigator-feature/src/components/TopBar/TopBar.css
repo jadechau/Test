@@ -1,0 +1,122 @@
+/**
+ * TopBar — built to match Surveil Design System tokens
+ * (No TopBar component exists in the design system; this follows the same
+ *  token conventions as Sidebar, Button, and other DS components.)
+ */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 var(--scale-500, 20px);
+  background-color: var(--color-white, #fff);
+  border-bottom: 1px solid var(--color-grey-100, #dfdfdf);
+  flex-shrink: 0;
+  gap: var(--scale-400, 16px);
+}
+
+.topbar__left {
+  display: flex;
+  align-items: center;
+  gap: var(--scale-400, 16px);
+  min-width: 0;
+}
+
+.topbar__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.topbar__title {
+  margin: 0;
+  font-family: var(--font-family-body, Roboto, system-ui, sans-serif);
+  font-size: 16px;
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-primary-900, #111827);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar__subtitle {
+  font-family: var(--font-family-body, Roboto, system-ui, sans-serif);
+  font-size: 12px;
+  color: var(--color-grey, #616161);
+  white-space: nowrap;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--scale-200, 8px);
+  flex-shrink: 0;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--scale-200, 8px);
+}
+
+.topbar__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--scale-100, 4px);
+}
+
+.topbar__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  border-radius: var(--radius-md, 4px);
+  color: var(--color-grey, #616161);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.topbar__icon-btn:hover {
+  background-color: var(--color-grey-50, #efefef);
+  color: var(--color-primary-900, #111827);
+}
+
+.topbar__icon-btn:focus-visible {
+  outline: 2px solid var(--color-primary, #3165ad);
+  outline-offset: 2px;
+}
+
+.topbar__divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-grey-100, #dfdfdf);
+  margin: 0 var(--scale-100, 4px);
+}
+
+.topbar__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--color-primary, #3165ad);
+  color: var(--color-white, #fff);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.topbar__avatar:hover {
+  background-color: var(--color-primary-700, #203b61);
+}
+
+.topbar__avatar:focus-visible {
+  outline: 2px solid var(--color-primary, #3165ad);
+  outline-offset: 2px;
+}
